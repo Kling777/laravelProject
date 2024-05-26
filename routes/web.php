@@ -17,12 +17,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', [IndustryController::class,'index']
-// );
 
+// Route::get('/', to_route('facilities.index'));
 Route::resources([
     'workers' => workerController::class,
     'industries' => IndustryController::class,
     'students' => studentController::class,
-    'facilities' => facilityController::class
+    'facilities' => facilityController::class,
+    '/' => facilityController::class,
 ]);
