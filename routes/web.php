@@ -3,6 +3,7 @@
 use App\Http\Controllers\facilityController;
 use App\Http\Controllers\IndustryController;
 use App\Http\Controllers\studentController;
+use App\Http\Controllers\workerController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,6 +21,7 @@ use Illuminate\Support\Facades\Route;
 // );
 
 Route::resources([
+    'workers' => workerController::class,
     'industries' => IndustryController::class,
     'students' => studentController::class,
     'facilities' => facilityController::class
