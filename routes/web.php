@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\facilityController;
 use App\Http\Controllers\IndustryController;
 use App\Http\Controllers\studentController;
@@ -21,6 +22,7 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', to_route('facilities.index'));
 Route::resources([
     'workers' => workerController::class,
+    'employees' => EmployeeController::class,
     'industries' => IndustryController::class,
     'students' => studentController::class,
     'facilities' => facilityController::class,

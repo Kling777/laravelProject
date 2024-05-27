@@ -5,7 +5,7 @@
             <h3>Tambah Data Karyawan</h3>
         </div>
         <div class="row mt-3">
-            <form method="POST" action="{{route('workers.store')}}">
+            <form method="POST" action="{{route('employees.store')}}">
                 @csrf
                 <table class="table table-bordered">
                     <tbody>
@@ -17,17 +17,17 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Umur</td>
+                            <td>Alamat</td>
                             <td>
                                 <input autocomplete="off" class="form-control" type="text"
-                                    name="umur">
+                                    name="alamat">
                             </td>
                         </tr>
                         <tr>
-                            <td>NIK</td>
+                            <td>NoHp</td>
                             <td>
                                 <input autocomplete="off" class="form-control" type="text"
-                                    name="nik">
+                                    name="noHp">
                             </td>
                         </tr>
                         <tr>
